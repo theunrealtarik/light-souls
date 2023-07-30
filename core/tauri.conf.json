@@ -7,7 +7,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "light-souls",
+    "productName": "Light Souls",
     "version": "0.0.0"
   },
   "tauri": {
