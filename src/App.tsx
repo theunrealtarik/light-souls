@@ -2,12 +2,16 @@ import { Button, Input } from "@/components";
 import { useInitialData } from "@/hooks";
 
 import { emit } from "@tauri-apps/api/event";
-
-import React, { useRef } from "react";
+import { invoke } from "@tauri-apps/api/tauri";
+import React, { useEffect, useRef } from "react";
 
 const App: React.FC = ({}) => {
   const data = useInitialData();
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    invoke("close_splashscreen");
+  }, []);
 
   const submitHandler = async (action: "set" | "add") => {
     const input = inputRef.current;

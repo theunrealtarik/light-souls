@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "Light Souls",
-    "version": "0.0.0"
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -41,7 +41,18 @@
         "maximizable": false,
         "title": "Light Souls",
         "width": 400,
-        "height": 180
+        "height": 180,
+        "visible": false
+      },
+      {
+        "fullscreen": false,
+        "center": true,
+        "decorations": false,
+        "resizable": false,
+        "url": "splashscreen.html",
+        "label": "splashscreen",
+        "width": 150,
+        "height": 150
       }
     ]
   }

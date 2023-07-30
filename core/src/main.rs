@@ -11,6 +11,14 @@ use tauri::{Manager, State};
 use lib::mem::Memory;
 use lib::{GAME_MANAGER_OFFSET, GAME_PROCESS_NAME};
 
+#[tauri::command]
+async fn close_splashscreen(window: tauri::Window) {
+  if let Some(splashscreen) = window.get_window("splashscreen") {
+    splashscreen.close().unwrap();
+  }
+  window.get_window("main").unwrap().show().unwrap();
+}
+
 #[derive(Debug, Serialize)]
 struct Data {
   pid: usize,
@@ -44,11 +52,6 @@ fn init_data(data: State<'_, Data>) -> Data {
     pid: data.pid,
     phandle: data.phandle,
   }
-}
-
-#[tauri::command(rename_all = "snake_case")]
-fn add_souls(amount: u32) {
-  println!("adding {} of souls to the player", amount)
 }
 
 fn main() {
@@ -89,7 +92,7 @@ fn main() {
 
           Ok(())
         })
-        .invoke_handler(tauri::generate_handler![add_souls, init_data])
+        .invoke_handler(tauri::generate_handler![init_data, close_splashscreen])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
     }
