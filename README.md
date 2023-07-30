@@ -16,7 +16,7 @@ Light-Souls is a third-party software developed independently of the game's crea
 
 ## License
 
-The Dark Souls Remastered Cheat Client is distributed under the [MIT License](https://mit-license.org/). Check the project repository for more details.
+**Light Souls** is distributed under the [MIT License](https://mit-license.org/). Check the project repository for more details.
 
 #
 
