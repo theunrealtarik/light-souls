@@ -3,7 +3,7 @@
 ![enter image description here](https://i.ibb.co/PCRscjv/Untitled-1.png)
 This is a third-party software for Dark Souls Remastered written in Rust, designed to provide players with the ability to manipulate their souls value in the game, allows users to add or set their souls value.
 
-[⏬ Download](https://github.com/Txreq/light-souls/releases/tag/v0)
+[⏬ Download](https://github.com/Txreq/light-souls/releases/)
 
 ## Requirements
 
