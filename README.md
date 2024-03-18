@@ -23,3 +23,5 @@ Light-Souls is a third-party software developed independently of the game's crea
 #
 
 Please ensure that you comply with the terms and conditions set by the game's developers when using third-party software. Cheating can have consequences, and responsible usage is essential to maintain a fair gaming environment.
+#
+didn't use ChatGPT
